@@ -1,0 +1,103 @@
+.tests {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+  
+.test {
+    min-width: 295px;
+    min-height: 295px;
+    display: inline-block;
+    margin: 10px;
+    flex-shrink: 0;
+    background: url('/img/background.png') 0 0/cover no-repeat fixed;
+    position: relative;
+}
+
+.image-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    background-color: rgba(41, 36, 53, 0.8);
+    color: white;
+    transition: opacity 0.2s ease;
+}
+  
+
+.image-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.image-button.show {
+    opacity: 1;
+}
+
+.search {
+    width: 1240px;
+    background-color: rgb(41, 36, 53);
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.search::placeholder {
+    color: rgb(160, 178, 177);
+}
+
+.search:focus {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, aqua 0px 0px 0px 2px;
+}
+
+@media screen and (max-width: 1403px) {
+    .search {
+        width: 927px;
+    }
+}
+
+@media screen and (max-width: 1053px) {
+    .search {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .search {
+        width: 470px;
+    }
+
+    .test {
+        min-width: 150px;
+        min-height: 150px;
+        margin: 5px;
+    } 
+   
+    .image-button {
+        padding: 10px;
+        font-size: small;
+    }  
+}
+
+
+@media screen and (max-width: 536px) {
+    .search {
+        width: 310px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .search {
+        width: 180px;
+    }
+    .test {
+        min-width: 180px;
+        min-height: 180px;
+    }
+}

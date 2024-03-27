@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Программирование</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">
+                <hgroup class="logo_text">
+                    <h1><a href="main.html">ПроIT</a></h1>
+                    <h2>только у нас</h2>
+                </hgroup>
+            </div>
+    
+            <nav class="menubar">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                
+                <ul class="menu menu__box">
+                    <li class="menu__item"><a href="main.html">Главная</a></li>	
+                    <li class="menu__item"><a href="tests.html">Тесты</a></li>
+                    <li class="menu__item"><a href="courses.html">Курсы</a></li>
+                    <li class="menu__item"><a href="languages.html">ЯП</a></li>
+                    <li class="selected menu__item"><a href="rating.html">Рейтинг ЯП</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+        
+        <main class="content">
+            <section>
+                <h2 class="title">Рейтинг ЯП 2023</h2>
+                <p>Рейтинг языков программирования показал, что JavaScript и TypeScript уже контролируют треть рынка. Java пятый год подряд теряет популярность. Python после нескольких лет негативной динамики в этом году набирает обороты.</p>
+                <p>Представляем результаты ежегодного опроса, данные и скрипты обработки можно найти на <a class="link" href="https://github.com/rssh/dou_pl_questionare">GitHub</a>.</p>
+            </section>
+            <section>
+                <h2 class="title">Коммерческое использование</h2>
+                <p>В этом году самым популярным языком остается JavaScript — 19% разработчиков пишут на нем коммерческие проекты. Далее — Java (14%) и Python (13%). Последний впервые среди самых популярных. С минимальным отрывом за Python идут C# и TypeScript.</p>
+                <img src="./img/rating/rating.png">
+                <p>Первое что бросается в глаза — стремительный рост популярности TypeScript. При этом это не только миграция JavaScript проектов, так как JavaScript тоже стали использовать чаще. Экосистема занимает новые ниши. Как мы увидим позже, TypeScript все больше становится языком выбора для новых проектов как на Back-end, так и в Full Stack разработке. Кроме того, резко выросла популярность Python, который занял третье место после трехлетнего спада. Возможно, это связано со второй волной интереса к анализу данных.</p>
+                <h2 class="title">Сферы использования</h2>
+                <p>Интересно, что на бэкенде выросла доля как TypeScript, так и JavaScript (хотя основным языком все еще остается Java), TypeScript уже используют чаще, чем JavaScript. Доля PHP сокращается, но язык все еще входит в тройку самых популярных, вероятно, Python заменит его в следующем году.</p>
+                <p>Во фронтенде все довольно ожидаемо, однако становится заметной доля фронтендов на C# (Blazor) и Dart (Flutter Web). Видно, что переход с JavaScript на TypeScript все-таки происходит.</p>
+                <p>В сфере анализа данных Python остается вне конкуренции. Удивляет рост доли R и отсутствие заметной доли языка Julia.</p>
+                <p>Основной сегмент фуллстек-разработки еще на C# с <a class="link" href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.NET</a>, но сектор JavaScript/TypeScript суммарно уже больше. Распределение далее в целом показывает те же тенденции, что и в бэкенде.</p>
+                <p>Сфера мобильной разработки приносит нам некоторые неожиданности, такие как одновременный рост доли Kotlin и сокращение доли Swift, что отражает соотношение разработки на Android и iOS. Еще интересно, что Flutter теперь используют чаще, чем React Native, в сегменте мультиплатформенных мобильных приложений.</p>
+                <p>В области DevOps основным языком, как и раньше, является Python. Ну и Embedded-разработка довольно консервативна. Как и раньше, большинство проектов написаны на C и C++, но видно, что с ростом мощности встроенных систем появилось место и для Python. Еще небольшой сегмент Embedded-разработки на Java — микрокарты — сейчас почти исчез.</p>
+            </section>
+            <section>
+                <h2 class="title">Рейтинг языков программирования по сферам использования</h2>
+                <h2 class="title">Back-end</h2>
+                <img src="./img/rating/backend.png">
+                <h2 class="title">Front-end</h2>
+                <img src="./img/rating/frontend.png">
+                <h2 class="title">Full Stack</h2>
+                <img src="./img/rating/fullstack.png">
+                <h2 class="title">Data processing</h2>
+                <img src="./img/rating/data.png">
+                <h2 class="title">Mobile</h2>
+                <img src="./img/rating/mobile.png">
+                <p>Примечательно, что изменилось распределение между специализациями: стало больше фронтенда, анализа данных и поддержки операций за счет сокращения бэкенда и фуллстек-разработки.</p>
+            </section>
+            <article>
+                <p>Информация взята с <a class="link" href="https://habr.com/ru/articles/730954/">habr</a>.</p>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <div class="social_network">
+                <a href="https://www.instagram.com/"><img src="./img/social_network/instagram.png" alt=""></a>
+                <a href="https://vk.com/"><img src="./img/social_network/vk.png" alt=""></a>
+                <a href="https://t.me/telegram"><img src="./img/social_network/telegram.png" alt=""></a>
+            </div>
+          © 2024
+        </footer>
+    </div>
+</body>
+</html>

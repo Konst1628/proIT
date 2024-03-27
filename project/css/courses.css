@@ -1,0 +1,23 @@
+.course {
+    margin-bottom: 3%;
+}
+
+.course a {
+    color: aqua;
+}
+
+.course a:hover {
+    color: wheat;
+}
+
+@media screen and (max-width: 768px) {
+    .course a {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .course a {
+        font-size: large;
+    }
+}

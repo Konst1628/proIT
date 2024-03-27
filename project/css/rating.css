@@ -1,0 +1,23 @@
+.content p {
+    margin-bottom: 1%;
+}
+
+.content img{
+    width: 70%;
+    margin: 2% auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .link {
+        text-decoration: underline;
+    }
+
+    .content img{
+        width: 100%;
+    }
+
+    .content p {
+        margin-bottom: 2%;
+    }
+}

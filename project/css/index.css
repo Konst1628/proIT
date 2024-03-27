@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: aqua;
+}
+
+body {
+    background: url('/project/img/background.png') 0 0/cover no-repeat fixed;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: large;
+    color: aqua;
+    text-indent: 3%;
+    margin: 1% 0;
+}
+
+hr {
+	margin: 30px auto;
+	border: none;
+    width: 94%;
+	border-top: 1px solid aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    font-size: 0.9em;
+}
+  
+.logo, .menubar {
+    margin-left: 3%;
+}
+  
+.logo {
+    padding-bottom: 5px;
+}
+  
+.logo h1, .logo h2 {
+    font: normal 400% 'century gothic', arial, sans-serif;
+}
+  
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+    padding-top: 22px;
+    color: aqua;
+    letter-spacing: 3px;
+}
+  
+.logo_text h2 {
+    display: inline-block;
+    font-size: 0.9em;
+    padding-top: 4px;
+    color: rgb(160, 178, 177);
+}
+  
+.menubar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+}
+
+.menu {
+    display: block;
+}
+  
+ul.menu li {
+    float: left;
+    list-style: none;
+}
+  
+ul.menu li a {
+    font: normal 110% 'trebuchet ms', sans-serif;
+    display: block;
+    padding: 0 80px 0 30px;
+    color: aqua;
+}
+  
+ul.menu li.selected a {
+    color: wheat;
+}
+
+ul.menu li a:hover {
+    color: wheat;
+}
+
+.container {
+    width: 90%;
+    min-height: 90%;
+    max-height: 85vh;
+    max-width: 1500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(41, 36, 53);
+    opacity: 0.95;
+    border: 2px solid;
+    border-color: rgb(88, 255, 255);
+    border-radius: 5px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.content {
+    padding: 0.1% 3%;
+    opacity: 1;
+    flex: 1 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.footer {
+    color: rgb(160, 178, 177);
+    flex: 0 0 auto;
+    padding: 2% 0 1% 0;
+    text-align: center;
+}
+
+.footer {
+    color: rgb(160, 178, 177);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 1% 0;
+    text-align: center;
+}
+
+.social_network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer img {
+    width: 33px;
+}
+
+.link {
+    color: wheat;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.title {
+    font-weight: 500;
+    font-size: x-large;
+    letter-spacing: 2px;
+    text-indent: 3%;
+    margin-bottom: 1%;
+}
+
+.test_img {
+    float: right;
+    margin: 10px 0 10px 20px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    height: auto;
+}
+
+.placeholder {
+    width: 100%;
+    height: 1px;
+}
+
+.button {
+    display: block;
+    margin: 3% auto;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background-color: rgb(41, 36, 53);
+    font-size: larger;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, aqua 0px 0px 0px 1px;
+}
+
+@media screen and (max-width: 893px) {
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    hr {
+        margin: 0 auto 30px;
+    }
+    
+    ul.menu li a {
+        padding: 0;
+    }
+  
+    .menu__btn {
+        display: flex;
+        align-items: center; 
+        position: fixed;
+        top: 50px;
+        right: 40px;
+        width: 22px;
+        height: 1px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: aqua;
+    }
+
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+        height: 1px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+        height: 1px;
+    }
+     
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: -100%;
+        right: -100%;
+        width: 200px;
+        margin: 0;
+        text-align: center;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        background-color: #0c081d;
+        z-index: 1;
+        border: 1px solid aqua;
+        border-bottom-left-radius: 5px;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 80px;        
+        font-size: small;
+        text-decoration: none;
+        outline: none;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        top: 0;
+        right: 0;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__item {
+        transition-duration: .25s;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: large;
+        margin: 0;
+    }
+
+    p {
+        font-size: medium;
+    }
+    
+    .link {
+        text-decoration: underline;
+    }
+
+    .footer {
+        padding: 3% 0 1% 0;
+        font-size: small;    
+    }
+
+    .button {
+        font-size: medium;
+        padding: 8px 13px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .title {
+        font-size: medium;
+    }
+
+    .menu__btn {
+        top: 55px;
+        right: 20px;
+    }
+
+    .menu__box {
+        width: 155px;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        width: 100%;
+        height: 0.5px;
+        background-color: aqua;
+    }
+
+    .menu__item {
+        display: block;
+        font-size: x-small;
+        padding: 10px 60px;
+    }
+
+    .logo_text h1 {
+        font-size: 270%;
+    }
+
+    .logo_text h2 {
+        font-size: x-small;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    hr {
+        margin: 0 auto 10px;
+    }
+
+    .footer img {
+        width: 24px;
+    }
+
+    .button {
+        font-size: small;
+        padding: 8px 13px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .test_img {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        float:none;
+    }
+}
+
+
+@media screen and (min-height: 1400px) {
+    .container {
+        min-height: 70%;
+        max-height: 70vh;
+    }   
+}
